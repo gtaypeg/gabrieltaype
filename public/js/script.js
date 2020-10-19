@@ -2,10 +2,10 @@ function initProyects(proyects, container) {
     for (let i = 0; i < proyects.length; i++) {
         let a = document.createElement("a");
         a.setAttribute("class", "proyect");
-        if(proyects[i].gif){
+        if (proyects[i].gif) {
             a.classList.add("has-gif");
-            a.setAttribute('data-gif', '/public/img/' + proyects[i].gif);
-            a.setAttribute('data-img', '/public/img/' + proyects[i].img);
+            a.setAttribute("data-gif", "/public/img/" + proyects[i].gif);
+            a.setAttribute("data-img", "/public/img/" + proyects[i].img);
         }
         a.setAttribute("href", proyects[i].href);
         a.setAttribute("target", "_blank");
@@ -14,7 +14,7 @@ function initProyects(proyects, container) {
         divImg.setAttribute("class", "proyect__container__img");
         a.appendChild(divImg);
         let img = document.createElement("img");
-        img.setAttribute("src", '/public/img/'  + proyects[i].img);
+        img.setAttribute("src", "/public/img/" + proyects[i].img);
         img.setAttribute("alt", "Proyecto");
         img.setAttribute("class", "proyect__img");
         divImg.appendChild(img);
@@ -41,12 +41,12 @@ function initProyects(proyects, container) {
 initProyects(works, document.querySelector("#trabajos .container__proyect"));
 initProyects(personal, document.querySelector("#personal .container__proyect"));
 
-let gifElems = document.querySelectorAll('.has-gif');
+let gifElems = document.querySelectorAll(".has-gif");
 for (let i = 0; i < gifElems.length; i++) {
-    gifElems[i].addEventListener('mouseenter', function(e){
-        e.target.getElementsByTagName('img')[0].src = e.target.getAttribute('data-gif')
-    })
-    gifElems[i].addEventListener('mouseleave', function(e){
-        e.target.getElementsByTagName('img')[0].src = e.target.getAttribute('data-img')
-    })
+    gifElems[i].addEventListener("mouseenter", function (e) {
+        e.target.getElementsByTagName("img")[0].src = e.target.getAttribute("data-gif");
+    });
+    gifElems[i].addEventListener("mouseleave", function (e) {
+        e.target.getElementsByTagName("img")[0].src = e.target.getAttribute("data-img");
+    });
 }
