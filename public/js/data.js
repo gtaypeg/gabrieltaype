@@ -13,13 +13,13 @@ let works = [
         tecs: ["Next"],
     },
     {
-        img: "topauriculares.JPG",
+        img: "topauriculares.jpg",
         title: "Los mejores auriculares inalámbricos",
         href: "https://www.topauricularesinalambricos.com/",
         tecs: ["HTML", "CSS", "JS"],
     },
     {
-        img: "mi-cuenta-online.JPG",
+        img: "mi-cuenta-online.jpg",
         title: "Mi cuenta online",
         href: "https://www.micuentaonline.com/",
         tecs: ["HTML", "CSS", "JS", "PHP"],
