@@ -89,6 +89,10 @@ h2{
 /* END SCROLL BAR */
 
 /* SELECTION */
+::-moz-selection {
+    color: #fff;
+    background: #70A288;
+}
 ::selection {
     color: #fff;
     background: #70A288;
@@ -114,20 +118,17 @@ nav.bg-gt{
 }
 .navbar-nav{
     margin: 0;
+    transition: margin-left 0.5s 0.3s;
 }
 .mx-auto-gt{
-    /* margin-left: calc(50% - 220px); */
+    margin-left: calc(50% - 220px);
+    right: calc(50% - 220px);
 }
 .ml-auto-gt{
-    /* margin-left: calc(100% - 430px); */
+    margin-left: calc(100% - 450px);
 }
 .navbar-brand{
     transition: margin 0.5s;
-}
-.navbar-nav{
-    transition: margin 0.5s 0.3s;
-    position: relative;
-    right: 0;
 }
 .nav-link{
     transition: all 0.5s;
@@ -136,20 +137,14 @@ nav.bg-gt{
 
 /* PRINCIPAL */
 .principal{
-    transition: height 0.5s 0.2s;
+    transition: height 0.5s 0.2s linear;
     background: linear-gradient(45deg, #04395e, #70a288);
     background-size: 400% 400%;
     -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
     animation: AnimationName 10s ease infinite;
     position: relative;
 }
 @-webkit-keyframes AnimationName {
-    0%{background-position:56% 0%}
-    50%{background-position:45% 100%}
-    100%{background-position:56% 0%}
-}
-@-moz-keyframes AnimationName {
     0%{background-position:56% 0%}
     50%{background-position:45% 100%}
     100%{background-position:56% 0%}
@@ -189,8 +184,14 @@ nav.bg-gt{
     position: absolute;
     bottom: 10px;
     font-size: 80px;
-    animation: blind 2s infinite;
+    -webkit-animation: blind 2s infinite;
+            animation: blind 2s infinite;
     opacity: 0.5;
+}
+@-webkit-keyframes blind {
+    50%{
+        bottom: -10px;
+    }
 }
 @keyframes blind {
     50%{
@@ -252,7 +253,6 @@ nav.bg-gt{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    /* transition: transform 0.6s, opacity 0.6s, top 0.6s 0.2s, left 0.6s 0.2s, width 0.6s 0.2s, height 0.6s 0.2s; */
     transition: all 0.6s 0.2s, transform 0.6s, opacity 0.6s;
 }
 .proyect::after{
