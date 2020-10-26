@@ -42,7 +42,7 @@ var navUl = document.querySelector(".navbar-nav");
 var links = document.querySelectorAll(".nav-item");
 var sections = document.querySelectorAll("section");
 
-window.addEventListener("scroll", function (e) {
+window.addEventListener("scroll", function () {
     if (window.scrollY + 50 > about.offsetTop) {
         brand.classList.add("show");
         navUl.classList.add("ml-auto-gt");
@@ -51,7 +51,7 @@ window.addEventListener("scroll", function (e) {
         let index = sections.length;
         while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
         links.forEach((link) => link.classList.remove("active"));
-        links[index].classList.add("active");
+        links[index - 1].classList.add("active");
     } else {
         links.forEach((link) => link.classList.remove("active"));
         brand.classList.remove("show");
