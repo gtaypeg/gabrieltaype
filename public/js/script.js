@@ -3,9 +3,6 @@ function initProyects(proyects, container, type) {
         let containerProyect = document.createElement("figure");
         containerProyect.setAttribute("class", "proyect col-12 col-sm-6 col-lg-4 p-0 m-0");
         container.appendChild(containerProyect);
-        // let divImg = document.createElement("div");
-        // divImg.setAttribute("class", "proyect_container_img");
-        // containerProyect.appendChild(divImg);
         let img = document.createElement("img");
         img.setAttribute("src", "/public/img/" + (type) + '/' + proyects[i].img);
         img.setAttribute("alt", "Proyecto");
@@ -18,6 +15,7 @@ function initProyects(proyects, container, type) {
         divTitle.setAttribute("class", "proyect_title");
         divTitle.setAttribute('href', proyects[i].href);
         divTitle.setAttribute('target', '_blank');
+        divTitle.setAttribute('rel', 'noopener')
         divTitle.textContent = proyects[i].title;
         proyect_info.appendChild(divTitle);
         let divLine = document.createElement("div");
