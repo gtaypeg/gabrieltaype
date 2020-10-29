@@ -19,7 +19,7 @@ let works = [
         tecs: 'HTML, CSS, JS',
     },
     {
-        img: "zonacuenta-min.jpg",
+        img: "zonacuentas-min.jpg",
         title: "Zonacuentas",
         href: "https://www.zonacuentas.com//",
         tecs: 'HTML, CSS, JS, PHP',
