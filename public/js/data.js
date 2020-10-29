@@ -19,9 +19,9 @@ let works = [
         tecs: 'HTML, CSS, JS',
     },
     {
-        img: "mi-cuenta-online-min.jpg",
-        title: "Mi cuenta online",
-        href: "https://www.micuentaonline.com/",
+        img: "zonacuenta-min.jpg",
+        title: "Zonacuentas",
+        href: "https://www.zonacuentas.com//",
         tecs: 'HTML, CSS, JS, PHP',
     },
 ];
