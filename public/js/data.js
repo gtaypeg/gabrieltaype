@@ -24,6 +24,12 @@ let works = [
         href: "https://www.zonacuentas.com//",
         tecs: 'HTML, CSS, JS, PHP',
     },
+    {
+        img: "bootstrap-page-1.jpg",
+        title: "Bootstrap Page",
+        href: "/pages/bootstrap-page-1",
+        tecs: 'Bootstrap',
+    },
 ];
 let personal = [
     {
