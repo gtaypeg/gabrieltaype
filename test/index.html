@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body { margin: 0; background-color: #000; }
+        canvas {
+            margin: auto;
+        }
+
+        .main {
+            position: absolute;
+            z-index: 99;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+            color: #fff;
+            font-family: montserrat;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 50px;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+            flex-shrink: 0;
+        }
+
+        .title {
+            width: 100px;
+            font-size: 80px;
+            font-weight: 100;
+            margin-bottom: 20px;
+        }
+
+        .desc {
+            font-size: 20px;
+            font-weight: 100;
+            width: 600px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="content">
+            <div class="title">GABRIEL TAYPE</div>
+            <div class="desc">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. In animi at, accusamus aspernatur commodi sequi nesciunt cupiditate eveniet nihil, deleniti a perspiciatis soluta quia iste ex vel? Eius, fuga earum.</div>
+                <br>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. In animi at</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="canvas_container"></div>
+
+    <script src="./public/js/three.js"></script>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>
